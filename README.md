@@ -1,11 +1,35 @@
-This project is a habit tracker used to track the habits of of the User on daily and weekly basis.
+<h1>Habit Tracker</h1>
+
+**Overview**
+
+Habit Tracker is a simple web application built with Node.js and MongoDB to help users track their habits. This application allows users to create, update, and delete habits, as well as track their daily progress. It is designed to be a lightweight and user-friendly tool for fostering positive habits.<hr>
+
+**Features**
+
+**Habit Management:** Users can create, update, and delete habits. Each habit can have a name, description, and a target goal.<br>
+**Daily Tracking:** Users can mark whether they have completed a habit for the day, allowing them to track their progress over time.<br>
+**Dashboard:** A visual dashboard provides users with an overview of their habits and their completion.
+
+![Screenshot (278)](https://github.com/simpleesarath/Habit-Tracker/assets/88574803/14caffa4-6558-4c71-ae01-fa1e2e44a51b)
+
+![Screenshot (279)](https://github.com/simpleesarath/Habit-Tracker/assets/88574803/783e03b1-ece3-45d1-b4b4-1095f8e08f21)
+
+![Screenshot (280)](https://github.com/simpleesarath/Habit-Tracker/assets/88574803/f5c4e9dd-f494-48c4-96e5-33cb2813a587)
+
+
+
+
+
+
+
+<hr>
 
 **Installation**
 
 To run this application on your local machine, please follow these steps:
 
 Clone this repository using the following command:
-https://github.com/tapan77777/Habit-Tracker-CodingNinjas.git
+https://github.com/simpleesarath/Habit-Tracker
 
 Install the required dependencies using the following command:
 $ npm install 
@@ -15,6 +39,8 @@ $ npm run start
 
 Open the application in your web browser by visiting the following URL:
 $ http://localhost:9000 
+
+<hr>
 
 **Usage:**
 
@@ -34,4 +60,4 @@ Green - Done
 Grey - Not Started
 
 7.When user changes the Status of any habit for the Current date it is also reflcted on the Daily View page
-# Habit-Tracker-CodingNinjas
+

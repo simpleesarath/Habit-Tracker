@@ -1,0 +1,29 @@
+<!-- <link rel="stylesheet" href="/css/weekview.css"> -->
+
+<div id="header-div">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <h1>Here you can track your Habit week report</h1>
+    <button type="button" id="daily-view"><a href="/habits/dailyView">Show Daily View</a></button>
+</div>
+<div id="habits-div">
+    <%for(let habit of habits){%>
+    <div id="user-habits">
+        <h4><%=habit.name%></h4>
+        <%habit.status.reverse().forEach(function(habitstatus){%>
+            <div>
+                <p><%=habitstatus.date%></p>
+
+                <%var bgcolor='#B1B6B5'%>
+               <% if(habitstatus.datestatus!=='Not Started'){%>
+                    <%bgcolor=habitstatus.datestatus=='Done'?'green':'red';}%>
+            
+                <button style="background-color:<%= habitstatus.datestatus === 'Done' ? 'green' : (habitstatus.datestatus === 'Not Started' ? '#B1B6B5' : 'red') %>">
+                    <a href="/habits/weeklyView/toggleStatus/?date=<%= habitstatus.date %>&id=<%= habit._id %>">&nbsp;</a>
+                </button>
+                    
+                </div>
+            <%})%>
+    </div>
+    <%}%>
+    </div>

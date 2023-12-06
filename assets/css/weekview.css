@@ -1,0 +1,78 @@
+body {
+  /* background-image: linear-gradient(#FFECD2 , #FCB69F); */
+  background-image: url(../images/graph.jpg);
+  background-size: cover;
+  overflow-y: scroll;
+  font-family: consolas;
+}
+
+#header-div {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+#header-div h1 {
+  color: rgb(24, 16, 16);
+  display: inline;
+  margin-right: 10%;
+  /* text-decoration-line: underline ; */
+  background-color: transparent;
+}
+li{
+  text-align: center;
+  margin: 8% 0%;
+  border:2px solid red ;
+}
+#header-div button {
+  width: 12%;
+  height: 32%;
+  font-size: 15px;
+  border-radius: 50px;
+  border: none;
+  color: rgb(139, 37, 37);
+  margin-right: 4%;
+  background-color: #e50b28;
+}
+#header-div a {
+  color: white;
+}
+
+#habits-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 2%;
+}
+#habits-div #user-habits {
+  width: 80%;
+  background-color: transparent;
+  height: 18vh;
+  display: flex;
+  align-items: center;
+  padding: 0 1%;
+  box-sizing: border-box;
+  margin-bottom: 2%;
+}
+#habits-div #user-habits h4 {
+  color: #0523e6;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
+  margin-right:2%;
+  font-weight: bolder;
+}
+#habits-div #user-habits div {
+  width: 16%;
+  padding-bottom: 2%;
+}
+#habits-div #user-habits button {
+  width: 14%;
+  height: 3vh;
+  font-size: 15px;
+  border-radius: 50px;
+  border: none;
+  margin-right: 4%;
+}

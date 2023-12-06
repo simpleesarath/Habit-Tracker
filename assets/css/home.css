@@ -9,7 +9,10 @@ body {
 h1 {
   color: #191717;
   display: inline;
+  margin-top: 10%;
   padding-top:4%;
+  font-weight: 450;
+  font-size: x-large;
 }
 #weekly-view {
   width: 12%;
@@ -36,14 +39,14 @@ h1 {
   margin-bottom: 2%;
 }
 #search-div form {
-  width: 40%;
+  width: 50%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 #search-div form select {
-  width: 50%;
+  width: 100px;
   height: 38%;
   font-size: 18px;
   padding-left: 2%;
@@ -51,17 +54,17 @@ h1 {
   border: none;
 }
 #search-div form input {
-  height: 33%;
+  height: 38%;
   width: 70%;
   margin-right: 3%;
-  font-size: 17px;
+  font-size: 12px;
   padding-left: 5%;
-  border-radius: 50px;
+  /* border-radius: 50px; */
   border: none;
 }
 #search-div form button {
-  width: 30%;
-  height: 45%;
+  width: 300px;
+  height: 40px;
   font-size: 15px;
   border-radius: 50px;
   background-color: #37737E;
@@ -111,4 +114,48 @@ h1 {
 }
 #habits-div #user-habits a {
   color: white;
+}
+@media screen and (max-width:450px) {
+  
+  h1{
+   display:block;
+  }
+  #weekly{
+    display:block;
+  }
+  #weekly-view{
+    display:block;
+    width: 150px;
+    height:70px;
+  }
+   #select-form{
+    /* display:block; */
+    width:70%;
+    height:10%;
+  }
+  #habits-div{
+    /* display:block; */
+    margin:0px;
+    padding:0px;
+
+  }
+   #habits-div #user-habits{
+    /* display:inline-block !important; */
+    height:18%;
+    width:100%;
+    margin-bottom:10px;
+    padding:0px;
+    border-radius:10px;
+
+  } 
+  #user-habits select{
+    height:25%;
+  }
+  /* .common{
+    display:block;
+    width:80%;
+    height:20%;
+    /* background-color: aquamarine; */
+  /* } */ 
+  
 }

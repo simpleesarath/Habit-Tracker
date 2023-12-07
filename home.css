@@ -1,0 +1,161 @@
+body {
+  background-image:linear-gradient(45deg,#C33764,#1D2671);
+  background-repeat:no-repeat;
+  overflow-y: scroll;
+  font-family: consolas;
+  font-weight: bold;
+}
+
+h1 {
+  color: #191717;
+  display: inline;
+  margin-top: 10%;
+  padding-top:4%;
+  font-weight: 450;
+  font-size: x-large;
+}
+#weekly-view {
+  width: 12%;
+  height: 10%;
+  font-size: 15px;
+  border-radius: 50px;
+  border: 1.5px solid #000000;
+  margin-left: 4%;
+  background-color: #e30606;
+  /* display:inline; */
+  
+}
+#weekly-view a {
+  /* color: rgb(121, 222, 12); */
+  
+}
+
+#search-div {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2%;
+}
+#search-div form {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#search-div form select {
+  width: 100px;
+  height: 38%;
+  font-size: 18px;
+  padding-left: 2%;
+  margin-right: 2%;
+  border: none;
+}
+#search-div form input {
+  height: 38%;
+  width: 70%;
+  margin-right: 3%;
+  font-size: 12px;
+  padding-left: 5%;
+  /* border-radius: 50px; */
+  border: none;
+}
+#search-div form button {
+  width: 300px;
+  height: 40px;
+  font-size: 15px;
+  border-radius: 50px;
+  background-color: #37737E;
+  border: none;
+  color: white;
+  margin-right: 4%;
+}
+
+#habits-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#habits-div #user-habits {
+  width: 60%;
+  background-color: white;
+  height: 18vh;
+  display: flex;
+  align-items: center;
+  padding: 0 1%;
+  box-sizing: border-box;
+  justify-content: flex-end;
+  margin-bottom: 2%;
+}
+#habits-div #user-habits h4 {
+  margin-right: 40%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  color: #37737E;
+}
+#habits-div #user-habits select {
+  width: 25%;
+  height: 20%;
+  font-size: 17px;
+  padding-left: 0.5%;
+  margin-right: 0.7%;
+}
+#habits-div #user-habits button {
+  width: 16%;
+  height: 40%;
+  font-size: 15px;
+  border-radius: 50px;
+  background-color: #B72322;
+  border: none;
+  margin-right: 4%;
+}
+#habits-div #user-habits a {
+  color: white;
+}
+@media screen and (max-width:450px) {
+  
+  h1{
+   display:block;
+  }
+  #weekly{
+    display:block;
+  }
+  #weekly-view{
+    display:block;
+    width: 150px;
+    height:70px;
+  }
+   #select-form{
+    /* display:block; */
+    width:70%;
+    height:10%;
+  }
+  #habits-div{
+    /* display:block; */
+    margin:0px;
+    padding:0px;
+
+  }
+   #habits-div #user-habits{
+    /* display:inline-block !important; */
+    height:18%;
+    width:100%;
+    margin-bottom:10px;
+    padding:0px;
+    border-radius:10px;
+
+  } 
+  #user-habits select{
+    height:25%;
+  }
+  /* .common{
+    display:block;
+    width:80%;
+    height:20%;
+    /* background-color: aquamarine; */
+  /* } */ 
+  
+}
